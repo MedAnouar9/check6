@@ -1,0 +1,39 @@
+ALGORITHM partie2
+VAR
+    tab1 : ARRAY_OF INTEGER[];
+    tab2 : ARRAY_OF INTEGER[];
+    i:INTEGER;
+    j:INTEGER;
+    somme:INTEGER;
+    dis:=0;
+
+
+BEGIN
+    FOR i FROM 0 TO tab1.length-1 STEP 1  DO
+        FOR j FROM 0 TO tab2.length-1 STEP 1  DO
+            
+            IF ( (tab1[i]=tab2[j])) THEN
+                dis:=tab[i];
+            ELSE
+                dis:=0;
+                BREACK;
+            END_IF
+            somme:=somme+dis;
+        END_FOR
+    END_FOR
+
+    
+
+        FOR j FROM 0 TO tab2.length-1 STEP 1  DO
+            FOR i FROM 0 TO tab1.length-1 STEP 1  DO
+            IF ( (tab1[i]==tab2[j] )) THEN
+                dis:=tab[j];
+            ELSE
+                dis:=0;
+                BREACK;
+            END_IF
+            somme:=somme+dis;
+        END_FOR
+    END_FOR
+    writeln (somme)
+END
